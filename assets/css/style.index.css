@@ -7,19 +7,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #18181b;
 }
+
 main{
 display: flex;
 justify-content: center;
 align-items: center;
 width: 100%;
 height: 100vh;
+gap: 3.5rem;
 }
+
 img{
     width: 31rem;
 }
+
 #form {
     display: flex;
     flex-direction: column;
@@ -27,11 +32,15 @@ img{
     color: #f8fafc;
     background-color: #262626;
     border-radius: 8px;
+    gap: 2rem;
+    
 }
+
 #calculator{
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    gap: 2rem;
 }
 
 .input-box label {
@@ -39,6 +48,7 @@ img{
     font-size: 1.2rem;
     color: #cbd5e1;
 }
+
 .input-field {
     display: flex;
     align-items: center;
@@ -48,6 +58,7 @@ img{
     border-radius: 4px;
     margin-top: 2px;
 }
+
 .input-field input{
     background-color: transparent;
     border: none;
@@ -66,4 +77,19 @@ img{
     color: #cbd5e1;
     font-size: 1.3rem;
     padding: 0.6rem 1 rem;
+}
+
+#calculate{
+    background-color: #fd1b1b;
+    border: none;
+    color: #f8fafc;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 3px;
+}
+.input-field input:focus{
+    outline: none;
 }
